@@ -1,2 +1,2 @@
 # GitPagesTesting
-https://jake-cloud.github.io/GitPagesTesting/
+https://jake-cloud.github.io/GitPagesTesting/index.html
