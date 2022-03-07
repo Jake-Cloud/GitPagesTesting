@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#navbar").load("/navbar.html");
+    // $("#navbar").load("/navbar.html");
     var url = window.location;
     $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
     $('ul.nav a').filter(function() {
