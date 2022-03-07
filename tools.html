@@ -5,12 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
-        <ul class="nav nav-pills justify-content-end bg-dark">
+        <nav id="auto_navbar"></nav>
+        <script> $("#auto_navbar").load("navbar.html"); </script>
+        <!-- <ul class="nav nav-pills justify-content-end bg-dark">
             <li class="nav-item">
                 <a class="nav-link" href="./.">Home</a>
             </li>
@@ -23,56 +25,58 @@
             <li class="nav-item">
                 <a class="nav-link" href="ux.html">UX</a>
             </li>
-        </ul>
+        </ul> -->
 
         <div class="container-fluid pt-5 pb-5 bg-dark text-center text-white">
             <h1>Project Tools and Frameworks</h1>
         </div>
 
-        <div class="row p-1">
-            <div class="col-xl-3 col-md-6 col-12 mb-3">
-                <div class="card my-2 shadow h-100">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Docker / Docker Compose</h4>
-                        <img class="card-img m-2" src="./images/docker_icon" alt="TestName" style="width: 120px; height: 120px">
-                        <p class="card-text">
-                            Local webserver will be contained in a series of docker containers, with abilites to change the configuration
-                            of these dockers dynamically. Docker compose will be used as an orchestration tool for the docker containers.
-                        </p>
+        <div class="container">
+            <div class="row p-1">
+                <div class="col-xl-3 col-md-6 col-12 mb-3">
+                    <div class="card my-2 shadow h-100">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Docker / Docker Compose</h4>
+                            <img class="card-img m-2" src="./images/docker_icon" alt="TestName" style="width: 120px; height: 120px">
+                            <p class="card-text">
+                                Local webserver will be contained in a series of docker containers, with abilites to change the configuration
+                                of these dockers dynamically. Docker compose will be used as an orchestration tool for the docker containers.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3 col-md-6 col-12 mb-3">
-                <div class="card my-2 shadow h-100">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Bootstrap 5</h4>
-                        <img class="card-img m-2" src="./images/bs5" alt="TestName" style="width: 120px; height: 120px">
-                        <p class="card-text">
-                            Bootstrap 5 is being used to style the project website. It will also be used to help style 
-                            both the other webservers.
-                        </p>
+                <div class="col-xl-3 col-md-6 col-12 mb-3">
+                    <div class="card my-2 shadow h-100">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Bootstrap 5</h4>
+                            <img class="card-img m-2" src="./images/bs5" alt="TestName" style="width: 120px; height: 120px">
+                            <p class="card-text">
+                                Bootstrap 5 is being used to style the project website. It will also be used to help style 
+                                both the other webservers.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3 col-md-6 col-12 mb-3">
-                <div class="card my-2 shadow h-100">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Angular</h4>
-                        <img class="card-img m-2" src="./images/angular" alt="TestName" style="width: 120px; height: 120px">
-                        <p class="card-text">
-                            Angular will be used to create the frontend for the host website and vulnerable webserver.
-                        </p>
+                <div class="col-xl-3 col-md-6 col-12 mb-3">
+                    <div class="card my-2 shadow h-100">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Angular</h4>
+                            <img class="card-img m-2" src="./images/angular" alt="TestName" style="width: 120px; height: 120px">
+                            <p class="card-text">
+                                Angular will be used to create the frontend for the host website and vulnerable webserver.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3 col-md-6 col-12 mb-3">
-                <div class="card my-2 shadow h-100">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Django</h4>
-                        <img class="card-img m-2" src="./images/django" alt="TestName" style="width: 120px; height: 120px">
-                        <p class="card-text">
-                            Django will be used for the backend on both the host website and the vulnerable webserver.
-                        </p>
+                <div class="col-xl-3 col-md-6 col-12 mb-3">
+                    <div class="card my-2 shadow h-100">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Django</h4>
+                            <img class="card-img m-2" src="./images/django" alt="TestName" style="width: 120px; height: 120px">
+                            <p class="card-text">
+                                Django will be used for the backend on both the host website and the vulnerable webserver.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

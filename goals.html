@@ -5,12 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
-        <ul class="nav nav-pills justify-content-end bg-dark">
+        <nav id="auto_navbar"></nav>
+        <script> $("#auto_navbar").load("navbar.html"); </script>
+        <!-- <ul class="nav nav-pills justify-content-end bg-dark">
             <li class="nav-item">
                 <a class="nav-link" href="./.">Home</a>
             </li>
@@ -23,63 +25,64 @@
             <li class="nav-item">
                 <a class="nav-link" href="ux.html">UX</a>
             </li>
-        </ul>
+        </ul> -->
 
         <div class="container-fluid pt-5 pb-5 bg-dark text-center text-white">
             <h1>Project Goals</h1>
         </div>
-
-        <div class="row p-1">
-            <div class="container-fluid fs-5 pe-3 ps-4 pt-2 pb-4">
-                &emsp; The goal of this project is to create an educational website that can be used to teach cybersecurity
-                basics. In order to acomplish this goal, we plan to create two websites. The first is an informational
-                website where users can find information about different cybersecurity threats and how to mitigate them.
-                The second is a hands-on experience that the user will deploy using docker. In this hands-on server, users
-                will be able to learn how different attacks are executed against an actual webserver.
+        
+        <div class="container">
+            <div class="row p-1">
+                <div class="container-fluid fs-5 pe-3 ps-4 pt-2 pb-4">
+                    &emsp; The goal of this project is to create an educational website that can be used to teach cybersecurity
+                    basics. In order to acomplish this goal, we plan to create two websites. The first is an informational
+                    website where users can find information about different cybersecurity threats and how to mitigate them.
+                    The second is a hands-on experience that the user will deploy using docker. In this hands-on server, users
+                    will be able to learn how different attacks are executed against an actual webserver.
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="col-xl-3 col-md-6 col-12 mb-3 p-2">
+                <h2 class="text-center">Motivation:</h2> 
+                <p>
+                    Our motivation for creating this project is that we believe there is currently a lack of knowledge and
+                    awareness about cybersecurity vulnerabilities. This lack of knowledge can lead to applications and websites having easily
+                    preventable vulnerabilities present. Our project looks to address these issues by providing an
+                    environment for users to both learn about threats, and practice their skills both executing and
+                    fixing vulnerabilities.
+                </p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-3 p-2">
+                    <h2 class="text-center">Users:</h2> 
+                    <p>
+                        There are 3 types of users that we are targeting for our project. First, students will be able to use our project
+                        to learn the basics of cybersecurity and get hands-on practice. Specifically, we are targeting cybersecurity and computer science
+                        students who we think would have the most to learn from this project. Second, we believe that this project will be able to serve
+                        as an effective teaching tool for teachers. They can use this project to show different types of vulnerabilities in a practical 
+                        application. Finally, professional developers will be able to use this project to brush up their knowledge, or learn new skills.
+                    </p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-3 p-2">
+                    <h2 class="text-center">Informational Website:</h2> 
+                    <p>
+                        Our informational website will host information pretaining to the vulnerabilities implemented on the hands-on webserver.
+                        This information will include what the vulnerabilities are, how to exploit them, and ways to mitigate or fix them. The
+                        for this site to be used as a learning tool for users to gain more knowledge about different types of attacks. Along with
+                        this we have a stretch goal to implement a backend server that connects to the hands-on server and will keep track of exploited
+                        vulnerabilities on a user's profiles.
+                    </p>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-3 p-2">
+                    <h2 class="text-center">Hands-on Webserver:</h2>
+                    <p>
+                        The hands-on webserver will allow users to test out how different vulnerabilities work. This webserver will emulate
+                        a hospital's website, with a login page, doctor search page, and bill payment page. We are aiming for this webserver
+                        to be running on a cluster of docker containers that will allow us to dynamic configuration of the servers. This would allow
+                        for different vulnerabilities to be generated on the server based on which seed is used.
+                    </p>
+                    
+                </div>
             </div>
         </div>
-        <div class="row p-3">
-            <div class="col-xl-3 col-md-6 col-12 mb-3 p-2">
-               <h2 class="text-center">Motivation:</h2> 
-               <p>
-                   Our motivation for creating this project is that we believe there is currently a lack of knowledge and
-                   awareness about cybersecurity vulnerabilities. This lack of knowledge can lead to applications and websites having easily
-                   preventable vulnerabilities present. Our project looks to address these issues by providing an
-                   environment for users to both learn about threats, and practice their skills both executing and
-                   fixing vulnerabilities.
-               </p>
-            </div>
-            <div class="col-xl-3 col-md-6 col-12 mb-3 p-2">
-                <h2 class="text-center">Users:</h2> 
-                <p>
-                    There are 3 types of users that we are targeting for our project. First, students will be able to use our project
-                    to learn the basics of cybersecurity and get hands-on practice. Specifically, we are targeting cybersecurity and computer science
-                    students who we think would have the most to learn from this project. Second, we believe that this project will be able to serve
-                    as an effective teaching tool for teachers. They can use this project to show different types of vulnerabilities in a practical 
-                    application. Finally, professional developers will be able to use this project to brush up their knowledge, or learn new skills.
-                </p>
-             </div>
-             <div class="col-xl-3 col-md-6 col-12 mb-3 p-2">
-                <h2 class="text-center">Informational Website:</h2> 
-                <p>
-                    Our informational website will host information pretaining to the vulnerabilities implemented on the hands-on webserver.
-                    This information will include what the vulnerabilities are, how to exploit them, and ways to mitigate or fix them. The
-                    for this site to be used as a learning tool for users to gain more knowledge about different types of attacks. Along with
-                    this we have a stretch goal to implement a backend server that connects to the hands-on server and will keep track of exploited
-                    vulnerabilities on a user's profiles.
-                </p>
-             </div>
-             <div class="col-xl-3 col-md-6 col-12 mb-3 p-2">
-                <h2 class="text-center">Hands-on Webserver:</h2>
-                <p>
-                    The hands-on webserver will allow users to test out how different vulnerabilities work. This webserver will emulate
-                    a hospital's website, with a login page, doctor search page, and bill payment page. We are aiming for this webserver
-                    to be running on a cluster of docker containers that will allow us to dynamic configuration of the servers. This would allow
-                    for different vulnerabilities to be generated on the server based on which seed is used.
-                </p>
-                
-             </div>
-        </div>
-
     </body>
 </html>
